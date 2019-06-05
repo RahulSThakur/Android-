@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+tools:context="com.example.dell.compass4.MainActivity">
+
+    <TextView
+        android:id="@+id/Compass1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/compass"
+        android:textSize="40sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pointer"
+        android:layout_alignLeft="@+id/pointer"
+        android:layout_alignStart="@+id/pointer"
+        android:layout_marginLeft="30sp"
+        android:text="@string/reading"
+        android:textSize="26sp"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"
+        android:layout_marginStart="30sp" />
+
+    <ImageView
+        android:id="@+id/pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/compass4"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/locationText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/location"
+        android:textSize="27sp"
+        android:textStyle="bold"
+    />
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pointer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/pointer"
+        android:layout_marginBottom="76dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="@string/lattitude_longitude"
+        android:textSize="27sp"
+        android:textStyle="italic"
+    />
+
+</RelativeLayout>
